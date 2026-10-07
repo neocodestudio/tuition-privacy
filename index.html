@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Tuition Management App</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f7f9;
+    --text: #1b1d1f;
+    --text-muted: #5b6168;
+    --border: #e4e6e9;
+    --accent: #2f6fed;
+    --accent-soft: #eaf1ff;
+    --warn-bg: #fff6e5;
+    --warn-border: #f0c975;
+    --warn-text: #6b4c00;
+    --radius: 14px;
+    --maxw: 820px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121315;
+      --surface: #1a1c1f;
+      --text: #ecedee;
+      --text-muted: #9aa0a6;
+      --border: #2a2d31;
+      --accent: #6ea2ff;
+      --accent-soft: #1d2a42;
+      --warn-bg: #2a2308;
+      --warn-border: #6b5416;
+      --warn-text: #ffd98a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121315;
+    --surface: #1a1c1f;
+    --text: #ecedee;
+    --text-muted: #9aa0a6;
+    --border: #2a2d31;
+    --accent: #6ea2ff;
+    --accent-soft: #1d2a42;
+    --warn-bg: #2a2308;
+    --warn-border: #6b5416;
+    --warn-text: #ffd98a;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+  }
+  .topbar-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+  }
+  .brand .doc-label {
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .switch-link {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .switch-link:hover { text-decoration: none; background: var(--accent-soft); }
+
+  main {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 36px 20px 80px;
+  }
+
+  .doc-head { margin-bottom: 28px; }
+  .doc-head h1 { font-size: 26px; margin: 0 0 6px; }
+  .meta { color: var(--text-muted); font-size: 13px; }
+
+  .notice {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    color: var(--warn-text);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    font-size: 13.5px;
+    margin: 18px 0 34px;
+  }
+  .notice strong { display: block; margin-bottom: 4px; font-size: 13.5px; }
+
+  section.doc h2 {
+    font-size: 20px;
+    margin: 40px 0 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  section.doc h2:first-of-type { border-top: none; padding-top: 0; }
+  section.doc h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  section.doc p, section.doc li { font-size: 14.5px; color: var(--text); }
+  section.doc ul { padding-left: 20px; margin: 8px 0; }
+  section.doc li { margin: 4px 0; }
+
+  .placeholder {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+
+  .admob-box {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    margin: 14px 0;
+  }
+  .admob-box h4 { margin: 0 0 8px; font-size: 14.5px; }
+
+  footer {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 20px 20px 50px;
+    color: var(--text-muted);
+    font-size: 12.5px;
+    text-align: center;
+  }
+
+  .theme-toggle {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12.5px;
+    cursor: pointer;
+  }
+
+  @media print {
+    header.topbar, .theme-toggle, .switch-link { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Tuition Management App <span class="doc-label">· Privacy Policy</span></div>
+    <div class="topbar-actions">
+      <a class="switch-link" href="terms-conditions.html">View Terms &amp; Conditions →</a>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="doc">
+    <div class="doc-head">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Effective date: <span class="placeholder">10/07/2026</span> · Last updated: <span class="placeholder">10/07/2026</span></div>
+    </div>
+
+    <p>This Privacy Policy explains how <span class="placeholder">Tuition Management App </span> the App collects, uses, and protects information when a Teacher or Student uses the App. By creating an account or using the App, you agree to the practices described here.</p>
+
+    <h2>1. Who this Policy applies to</h2>
+    <p>The App is used by two kinds of account holders: <strong>Teachers</strong> (home tutors) and <strong>Students</strong>. Student accounts may be created or used by minors under the guidance of a parent or guardian, and some information about parents/guardians is also collected as part of a Student's profile.</p>
+
+    <h2>2. Information we collect</h2>
+    <h3>Account information</h3>
+    <ul>
+      <li>Full name, username, email address, phone number, date of birth, gender, profile photo, address/city</li>
+      <li>Authentication data via Google Sign-In (your Google account email, used only to verify account ownership)</li>
+    </ul>
+    <h3>Student-specific information</h3>
+    <ul>
+      <li>School/class or grade</li>
+      <li>Parent or guardian name, phone number, and email</li>
+      <li>Home address / location details relevant to tuition scheduling</li>
+    </ul>
+    <h3>Teacher-specific information</h3>
+    <ul>
+      <li>Subjects taught, qualifications, years of experience, teaching mode, service areas, rate information, bio, and optional certificate/ID uploads</li>
+    </ul>
+    <h3>Usage &amp; content data</h3>
+    <ul>
+      <li>Tuition schedules, attendance/session records, comments, homework entries and attachments, and payment status records entered by a Teacher</li>
+      <li>Device information, app diagnostics, and crash logs</li>
+      <li>Push notification tokens, used only to deliver in-app notifications to your device</li>
+    </ul>
+
+    <h2>3. How we use this information</h2>
+    <ul>
+      <li>To create and operate Teacher/Student accounts and the connection between them</li>
+      <li>To display schedules, attendance, homework, comments, and payment status to the right people</li>
+      <li>To send notifications and reminders about sessions, requests, and homework</li>
+      <li>To maintain a change history when a Teacher edits a Student's profile, so the Student can see what changed</li>
+      <li>To keep the service secure and prevent misuse</li>
+      <li>To show advertising, as described in the AdMob section below</li>
+    </ul>
+
+    <h2>4. Where data is stored</h2>
+    <p>Data is stored using Google Firebase services (Cloud Firestore, Firebase Authentication, Firebase Cloud Storage, Cloud Functions, and Firebase Cloud Messaging), operated by Google under their own data processing and security terms. We do not sell personal information to third parties.</p>
+
+    <h2>5. Advertising — Google AdMob</h2>
+    <div class="admob-box">
+      <h4>What this means for you</h4>
+      <p>This App displays advertisements served through <strong>Google AdMob</strong>. To show ads, AdMob and its partners may collect and process:</p>
+      <ul>
+        <li>Your device's advertising identifier (e.g. Android Advertising ID)</li>
+        <li>IP address and general location (country/region level)</li>
+        <li>App usage and interaction data related to ads (impressions, clicks)</li>
+        <li>Other device and diagnostic identifiers used for ad delivery and fraud prevention</li>
+      </ul>
+      <p>Depending on your settings and region, ads shown may be <strong>personalized</strong> (based on interests inferred from your activity) or <strong>non-personalized</strong>. You can manage ad personalization in your device's <em>Google Settings &gt; Ads</em>, where you can opt out of personalized ads or reset your advertising identifier.</p>
+      <p>AdMob's data collection and use is additionally governed by Google's own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from partner sites or apps</a>.</p>
+      <p><strong>If Students using this App are children under 13 (or the applicable age in your region):</strong> this App must be configured for child-directed treatment in AdMob (serving only non-personalized, contextual ads and disabling ad personalization signals), and may need to participate in Google Play's Families program. This is a configuration you (the developer) must set in the AdMob and Play Console dashboards — it is not automatic, and getting it wrong can violate Google Play policy and child-privacy law. Confirm this setup with a lawyer before launch if any primary users are under 13.</p>
+    </div>
+
+    <h2>6. Other third-party services</h2>
+    <ul>
+      <li><strong>Google Sign-In</strong> — used only to verify your email during sign-up and sign-in.</li>
+      <li><strong>Firebase Cloud Messaging</strong> — used to deliver push notifications.</li>
+      <li>We do not share your personal data with advertisers directly; ad identifiers are handled by Google's AdMob infrastructure as described above.</li>
+    </ul>
+
+    <h2>7. Children's privacy</h2>
+    <p>The App is designed to be used by Students together with a parent or guardian's awareness, since parent/guardian contact details are collected as part of a Student profile. We do not knowingly allow a child to create an account without this context. If you are a parent or guardian and believe your child has provided personal information beyond what's described here, contact us using the details below so we can review or remove it.</p>
+
+    <h2>8. Your rights</h2>
+    <p>You can request to access, correct, export, or delete your personal information, and you can delete your account directly from Settings. Parents/guardians may request the same on behalf of a Student by contacting us.</p>
+
+    <h2>9. Security</h2>
+    <p>We use Firebase Authentication and Firestore Security Rules to restrict who can read or write each piece of data (for example, only a linked Teacher can mark attendance, and students cannot edit a Teacher's records). No method of transmission or storage is 100% secure, but we take reasonable steps to protect your information.</p>
+
+    <h2>10. Changes to this Policy</h2>
+    <p>We may update this Policy from time to time. Material changes will be reflected by updating the "Last updated" date above, and significant changes may also be announced in-app.</p>
+
+    <h2>11. Contact us</h2>
+    <p>Questions about this Privacy Policy can be sent to babulakter081@gmail.com <span class="placeholder"></span></span>.</p>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> <span class="placeholder">Babul</span>. All rights reserved. ·
+  
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function toggleTheme() {
+    const root = document.documentElement;
+    const current = root.getAttribute('data-theme');
+    if (current === 'dark') root.setAttribute('data-theme', 'light');
+    else if (current === 'light') root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme', 'dark');
+  }
+</script>
+
+</body>
+</html>
